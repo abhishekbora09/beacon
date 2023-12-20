@@ -6,7 +6,7 @@ from datasets import load_dataset
 
 st.set_page_config(layout='wide', initial_sidebar_state='collapsed')
 
-@st.cache(allow_input_mutation=True)
+@st.cache(allow_output_mutation=True)
 def load_data():
     # df_original = pd.read_csv("./data/github_dataset.csv")
     # df = df_original.copy()
